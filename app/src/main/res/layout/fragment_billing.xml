@@ -1,0 +1,156 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="190dp"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:weightSum="3"
+    android:orientation="vertical"
+    android:background="@color/bgBlack"
+    tools:context=".Billing_1m">
+
+
+    <androidx.cardview.widget.CardView
+
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:backgroundTint="@color/White"
+        app:cardCornerRadius="6dp"
+        android:layout_margin="4dp">
+
+        <LinearLayout
+            android:id="@+id/cv_tNn"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal"
+            android:weightSum="3"
+            android:padding="8dp">
+
+            <TextView
+                android:id="@+id/tv_subsName1"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="2"
+
+                android:text="Training &amp; Nutrients"
+                android:gravity="center_vertical"
+                android:textSize="15sp"
+                android:textColor="@color/SecondaryBlue"
+                android:fontFamily="@font/segoe_ui_bold"/>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:weightSum="2"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/tv_pricePerWeek1"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:fontFamily="@font/segoe_ui_bold"
+                    android:textAlignment="textEnd"
+                    android:text="£3.83/ Week"
+                    android:textColor="@color/SecondaryBlue"
+                    android:textSize="15sp"
+                    tools:ignore="NestedWeights" />
+
+                <TextView
+                    android:id="@+id/tv_pricePerSub1"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:fontFamily="@font/segoe_ui_bold"
+                    android:textAlignment="textEnd"
+                    android:text="£49.99/ 3 Month"
+                    android:textColor="@color/SecondaryBlue"
+                    android:textSize="15sp"
+                    tools:ignore="NestedWeights" />
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </androidx.cardview.widget.CardView>
+    <androidx.cardview.widget.CardView
+
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:backgroundTint="@color/ItemGray"
+        app:cardCornerRadius="6dp"
+        android:layout_margin="4dp">
+
+        <LinearLayout
+            android:id="@+id/cv_t"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal"
+            android:weightSum="3"
+            android:padding="8dp">
+
+            <TextView
+                android:id="@+id/tv_subsName2"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="2"
+
+                android:text="Training"
+                android:gravity="center_vertical"
+                android:textSize="15sp"
+                android:textColor="@color/White"
+                android:fontFamily="@font/segoe_ui_bold"/>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:weightSum="2"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/tv_pricePerWeek2"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:fontFamily="@font/segoe_ui_bold"
+                    android:textAlignment="textEnd"
+                    android:text="£3.83/ Week"
+                    android:textColor="@color/White"
+                    android:textSize="15sp"
+                    tools:ignore="NestedWeights" />
+
+                <TextView
+                    android:id="@+id/tv_pricePerSub2"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:fontFamily="@font/segoe_ui_bold"
+                    android:textAlignment="textEnd"
+                    android:text="£49.99/ 3 Month"
+                    android:textColor="@color/White"
+                    android:textSize="15sp"
+                    tools:ignore="NestedWeights" />
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </androidx.cardview.widget.CardView>
+
+    <Button
+        android:id="@+id/btn_Subscribe"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:backgroundTint="@color/SecondaryBlue"
+        android:text="Subscribe now"
+        android:textSize="15sp"
+        android:fontFamily="@font/segoe_ui_bold"
+        android:textAllCaps="false"
+        android:layout_alignParentBottom="true"
+        android:layout_margin="3dp"/>
+
+
+</LinearLayout>

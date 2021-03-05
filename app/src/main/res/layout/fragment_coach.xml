@@ -1,0 +1,211 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:fitsSystemWindows="false"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_marginBottom="60dp"
+    android:background="@color/bgBlack"
+    tools:context=".MainApp">
+
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:scrollbars="none">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:id="@+id/tv_Title"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentTop="true"
+                android:layout_marginStart="16dp"
+                android:layout_marginTop="32dp"
+                android:text="Training Journeys"
+                android:fontFamily="@font/segoe_ui_bold"
+                android:textColor="@color/White"
+                android:textSize="30sp"/>
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/cv_recommended"
+                android:layout_width="350dp"
+                android:layout_height="353dp"
+                android:layout_below="@id/tv_Title"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="32dp"
+                app:cardCornerRadius="25dp"
+                android:backgroundTint="@color/white"
+                app:cardElevation="8dp"
+                app:cardMaxElevation="8dp">
+
+                <ImageView
+                    android:id="@+id/iv_Recommended"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:scaleType="centerCrop"
+                    android:src="@drawable/comingsoon"/>
+
+            </androidx.cardview.widget.CardView>
+
+
+
+            <TextView
+                android:id="@+id/tv_subTitle"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/cv_recommended"
+                android:layout_marginStart="16dp"
+                android:layout_marginTop="32dp"
+                android:text="Get started"
+                android:fontFamily="@font/segoe_ui_bold"
+                android:textColor="@color/White"
+                android:textSize="20sp"/>
+
+            <TextView
+                android:id="@+id/tv_GetStartedDes"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/tv_subTitle"
+                android:layout_marginStart="16dp"
+                android:layout_marginTop="8dp"
+                android:text="Learn the basics of fitness and FitQuest with Training Journeys designed for beginners."
+                android:fontFamily="@font/segoe_ui_bold"
+                android:textColor="@color/White"
+                android:textSize="12sp"/>
+
+            <!--get started-->
+            <HorizontalScrollView
+                android:id="@+id/h_scroll1"
+                android:layout_width="500dp"
+                android:layout_height="160dp"
+                android:background="@color/SecondaryBlue"
+                android:layout_below="@id/tv_GetStartedDes"
+                android:layout_marginTop="32dp"
+                android:scrollbars="none">
+
+                <RelativeLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:background="@color/bgBlack"
+                    android:paddingHorizontal="50dp"
+                    >
+
+                    <androidx.cardview.widget.CardView
+                        android:id="@+id/cv_getStarted1"
+                        android:layout_width= "300dp"
+                        android:layout_height="160dp"
+                        app:cardCornerRadius="25dp"
+                        android:layout_alignParentStart="true"
+                        android:backgroundTint="@color/purple_200"
+                        app:cardElevation="4dp">
+
+                        <ImageView
+                            android:id="@+id/iv_getStarted1"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:scaleType="centerCrop"
+                            android:src="@drawable/comingsoon"/>
+
+                    </androidx.cardview.widget.CardView>
+
+                    <androidx.cardview.widget.CardView
+                        android:id="@+id/cv_getStarted2"
+                        android:layout_width="300dp"
+                        android:layout_height="160dp"
+                        android:layout_toEndOf="@+id/cv_getStarted1"
+                        android:layout_marginStart="15px"
+                        android:backgroundTint="@color/bgGrey"
+                        app:cardCornerRadius="25dp"
+                        app:cardElevation="4dp">
+
+                        <ImageView
+                            android:id="@+id/iv_getStarted2"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:scaleType="centerCrop"
+                            android:src="@drawable/comingsoon"/>
+
+                    </androidx.cardview.widget.CardView>
+
+                    <androidx.cardview.widget.CardView
+                        android:id="@+id/cv_getStarted3"
+                        android:layout_width="300dp"
+                        android:layout_height="160dp"
+                        android:layout_toEndOf="@+id/cv_getStarted2"
+                        android:layout_marginStart="15px"
+                        android:backgroundTint="@color/bgGrey"
+                        app:cardCornerRadius="25dp"
+                        app:cardElevation="4dp">
+
+                        <ImageView
+                            android:id="@+id/iv_getStarted3"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:scaleType="centerCrop"
+                            android:src="@drawable/comingsoon"/>
+
+                    </androidx.cardview.widget.CardView>
+
+                </RelativeLayout>
+
+
+            </HorizontalScrollView>
+
+            <TextView
+                android:id="@+id/tv_LimitedEdition"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/h_scroll1"
+                android:layout_marginStart="16dp"
+                android:layout_marginTop="32dp"
+                android:text="Limited Editions"
+                android:fontFamily="@font/segoe_ui_bold"
+                android:textColor="@color/White"
+                android:textSize="20sp"/>
+
+            <TextView
+                android:id="@+id/tv_LimitedEditionDesc"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/tv_LimitedEdition"
+                android:layout_marginStart="16dp"
+                android:layout_marginTop="8dp"
+                android:text="Discover training Journeys only available for a short time."
+                android:fontFamily="@font/segoe_ui_bold"
+                android:textColor="@color/White"
+                android:textSize="12sp"/>
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/cv_limitedEdition1"
+                android:layout_width="300dp"
+                android:layout_height="160dp"
+                android:layout_below="@+id/tv_LimitedEditionDesc"
+                android:layout_marginTop="32dp"
+                android:layout_centerHorizontal="true"
+                android:backgroundTint="#00D5D5D5"
+                app:cardCornerRadius="25dp"
+                app:cardElevation="4dp">
+
+                <ImageView
+                    android:id="@+id/iv_limitedEdition1"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"/>
+
+            </androidx.cardview.widget.CardView>
+
+
+
+        </RelativeLayout>
+
+
+
+
+    </ScrollView>
+
+
+</RelativeLayout>

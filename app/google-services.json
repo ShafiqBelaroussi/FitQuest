@@ -1,0 +1,40 @@
+{
+  "project_info": {
+    "project_number": "346703463761",
+    "firebase_url": "https://fitquest-68110.firebaseio.com",
+    "project_id": "fitquest-68110",
+    "storage_bucket": "fitquest-68110.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:346703463761:android:564f1e7275613a08e8bf70",
+        "android_client_info": {
+          "package_name": "com.belar.fitquest"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "346703463761-iktoau53h24j10avfsie1lu5omkkrqnv.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAqUjtPsXy6Hubn9J5FdO-me0RYZzhWDJ8"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "346703463761-iktoau53h24j10avfsie1lu5omkkrqnv.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

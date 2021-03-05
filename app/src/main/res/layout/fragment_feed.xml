@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_marginBottom="60dp"
+    tools:context=".FeedFragment">
+
+    <!-- TODO: Update blank fragment layout -->
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <ListView
+            android:id="@+id/lv_FeedList"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:clickable="false"
+            android:listSelector="#00000000"/>
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/btn_AddPost"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:background="@drawable/ic_add"
+            app:backgroundTint="@color/SecondaryBlue"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentEnd="true"
+            android:layout_marginEnd="16dp"
+            android:layout_marginBottom="16dp"/>
+
+    </RelativeLayout>
+
+    <!--Add a New Post-->
+    <RelativeLayout
+        android:id="@+id/rl_AddPost"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/White"
+        android:visibility="visible">
+
+        <ImageView
+            android:id="@+id/iv_PosterProfilePic"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:layout_margin="12dp"
+            android:src="@drawable/ic_profile"
+            android:background="@drawable/custom_btn_conrnered_edge"/>
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/btn_closeNewFeedPage"
+            android:layout_width="25dp"
+            android:layout_height="25dp"
+            android:layout_alignParentEnd="true"
+            android:layout_marginTop="12dp"
+            android:layout_marginEnd="12dp"
+            android:background="@drawable/ic_close"
+
+            android:backgroundTint="@color/bgBlack"/>
+        <EditText
+            android:id="@+id/et_WhatsInYourMind"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/iv_PosterProfilePic"
+            android:layout_marginStart="8dp"
+            android:layout_marginEnd="36dp"
+            android:hint="What's on your mind?"
+            android:textSize="16sp"
+            android:textColor="@color/bgBlack"
+            android:inputType="text"
+            android:imeOptions="actionDone"
+            android:backgroundTint="#001577EA"/>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="300dp"
+            android:layout_below="@+id/et_WhatsInYourMind"
+            android:layout_marginTop="8dp"
+            android:background="@color/TxtGray">
+
+            <ImageView
+                android:id="@+id/iv_PostImage"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentTop="true"
+                android:layout_margin="12dp"
+                android:src="@android:drawable/ic_menu_camera"
+                android:background="@drawable/custom_btn_conrnered_edge"/>
+
+        </RelativeLayout>
+
+        <Button
+            android:id="@+id/btn_SharePoste"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:backgroundTint="@color/ItemGray"
+            android:text="Share"
+            android:textSize="15sp"
+            android:fontFamily="@font/segoe_ui_bold"
+            android:textAllCaps="false"
+            android:layout_alignParentBottom="true"
+            android:layout_margin="8dp"
+            android:clickable="false"/>
+
+
+    </RelativeLayout>
+
+
+</FrameLayout>

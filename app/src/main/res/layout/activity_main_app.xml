@@ -1,0 +1,255 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/bgBlack"
+    tools:context=".MainApp">
+
+
+
+    <com.google.android.material.bottomnavigation.BottomNavigationView
+        android:id="@+id/bottomNav"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:layout_alignParentBottom="true"
+        android:background="@color/bgBlack"
+        app:menu="@menu/bottom_menu"
+        app:itemIconTint="@drawable/bottom_nav_tab_color"
+        app:itemTextColor="@drawable/bottom_nav_tab_color"
+        android:elevation="10dp"/>
+
+
+    <FrameLayout
+        android:id="@+id/fl_fragmentContainer"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+
+    </FrameLayout>
+
+    <!--Item Info Page-->
+    <RelativeLayout
+        android:id="@+id/rl_ItemInfoPage"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:visibility="gone"
+        android:background="@color/light_blue_600">
+
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:backgroundTint="@color/light_blue_600">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/bgBlack">
+
+                <ImageView
+                    android:id="@+id/iv_ItemImage"
+                    android:layout_width="match_parent"
+                    android:layout_height="300dp"
+                    android:src="@drawable/ic_profile">
+
+                </ImageView>
+
+                <androidx.appcompat.widget.AppCompatButton
+                    android:id="@+id/btn_closeItemInfoPage"
+                    android:layout_width="25dp"
+                    android:layout_height="25dp"
+                    android:layout_alignParentEnd="true"
+                    android:layout_marginTop="15dp"
+                    android:layout_marginEnd="15dp"
+                    android:background="@drawable/ic_close"/>
+
+                <TextView
+                    android:id="@+id/tv_ItemLength"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/iv_ItemImage"
+                    android:layout_marginStart="16dp"
+                    android:layout_marginTop="8dp"
+                    android:text="12 weeks"
+                    android:fontFamily="@font/segoe_ui_bold"
+                    android:textColor="@color/White"
+                    android:textSize="12sp"/>
+
+                <TextView
+                    android:id="@+id/tv_ItemName"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/tv_ItemLength"
+                    android:layout_marginStart="16dp"
+                    android:layout_marginTop="4dp"
+                    android:text="HYBRID STRENGTH"
+                    android:textAllCaps="true"
+                    android:fontFamily="@font/segoe_ui_bold_italic"
+                    android:textColor="@color/White"
+                    android:textSize="20sp"/>
+
+                <TextView
+                    android:id="@+id/tv_contains1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/tv_ItemName"
+                    android:layout_marginStart="16dp"
+                    android:layout_marginTop="4dp"
+                    android:text="- Cardio"
+                    android:fontFamily="@font/segoe_ui_bold"
+                    android:textColor="@color/White"
+                    android:textSize="12sp"/>
+                <TextView
+                    android:id="@+id/tv_contains2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/tv_ItemName"
+                    android:layout_toEndOf="@+id/tv_contains1"
+                    android:layout_marginStart="16dp"
+                    android:layout_marginTop="4dp"
+                    android:text="- Gym"
+                    android:fontFamily="@font/segoe_ui_bold"
+                    android:textColor="@color/White"
+                    android:textSize="12sp"/>
+
+                <TextView
+                    android:id="@+id/tv_whattoknow"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/tv_contains1"
+                    android:layout_marginStart="16dp"
+                    android:layout_marginTop="32dp"
+                    android:text="What to know"
+                    android:fontFamily="@font/segoe_ui_bold"
+                    android:textColor="@color/White"
+                    android:textSize="20sp"/>
+
+                <TextView
+                    android:id="@+id/tv_ItemRequirement"
+                    android:layout_width="match_parent"
+                    android:layout_height="1000dp"
+                    android:layout_below="@+id/tv_whattoknow"
+                    android:layout_marginStart="16dp"
+                    android:layout_marginTop="8dp"
+                    android:text="This course requires access to a gym"
+                    android:fontFamily="@font/segoe_ui_bold"
+                    android:textColor="@color/White"
+                    android:textSize="12sp"/>
+
+
+
+
+
+            </RelativeLayout>
+
+
+        </ScrollView>
+
+        <Button
+            android:id="@+id/btn_showSubsInfo"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:backgroundTint="@color/SecondaryBlue"
+            android:text="Start your Training Journey"
+            android:textSize="15sp"
+            android:fontFamily="@font/segoe_ui_bold"
+            android:textAllCaps="false"
+            android:layout_alignParentBottom="true"
+            android:layout_margin="8dp"/>
+
+    </RelativeLayout>
+
+
+
+    <!--subs Info Page-->
+    <RelativeLayout
+        android:id="@+id/rl_SubsInfoPage"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/bgBlack"
+        android:visibility="gone">
+
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:backgroundTint="@color/light_blue_600">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/bgBlack">
+
+                <ImageView
+                    android:id="@+id/iv_BillingImage"
+                    android:layout_width="match_parent"
+                    android:layout_height="300dp"
+                    android:src="@drawable/ic_profile">
+
+                </ImageView>
+
+                <androidx.appcompat.widget.AppCompatButton
+                    android:id="@+id/btn_closeBillingInfoPage"
+                    android:layout_width="25dp"
+                    android:layout_height="25dp"
+                    android:layout_alignParentEnd="true"
+                    android:layout_marginTop="15dp"
+                    android:layout_marginEnd="15dp"
+                    android:background="@drawable/ic_close"/>
+
+                <TextView
+                    android:layout_width="250dp"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentTop="true"
+                    android:layout_marginStart="16dp"
+                    android:layout_marginTop="200dp"
+                    android:fontFamily="@font/segoe_ui_bold"
+                    android:text="COMMIT TO YOUR FITTEST SELF"
+                    android:textColor="@color/White"
+                    android:textSize="25sp" />
+
+
+                <com.google.android.material.tabs.TabLayout
+                    android:id="@+id/tl_subsInfoTabs"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/iv_BillingImage"
+                    app:tabGravity="fill"
+                    app:tabIndicatorColor="@color/SecondaryBlue"
+                    app:tabMode="fixed"
+                    app:tabSelectedTextColor="@color/SecondaryBlue"
+                    app:tabTextColor="@color/TxtGray"
+                    app:tabBackground="@color/bgBlack"
+                    android:background="@color/bgBlack"
+                    android:padding="8dp"/>
+
+                <androidx.viewpager.widget.ViewPager
+                    android:id="@+id/vp_BillingFragmentContainer"
+                    android:layout_width="match_parent"
+                    android:layout_height="190dp"
+                    android:layout_below="@+id/tl_subsInfoTabs"
+                    android:padding="8dp"/>
+
+
+            </RelativeLayout>
+
+
+        </ScrollView>
+
+        <!--<Button
+            android:id="@+id/btn_StartBilling"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:layout_alignParentBottom="true"
+            android:layout_margin="8dp"
+            android:backgroundTint="@color/SecondaryBlue"
+            android:fontFamily="@font/segoe_ui_bold"
+            android:text="Subscribe now"
+            android:textAllCaps="false"
+            android:textSize="15sp" />-->
+
+    </RelativeLayout>
+
+</RelativeLayout>

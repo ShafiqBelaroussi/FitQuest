@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="90dp"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    app:cardCornerRadius="5dp"
+    android:layout_margin="8dp">
+
+
+
+    <RelativeLayout
+        android:id="@+id/rl_courseItem"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/bgGrey">
+
+        <TextView
+            android:id="@+id/tv_workoutItem"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true"
+
+            android:text="100g Chicken breasts with green salad"
+            android:textSize="18sp"
+            android:textAlignment="center"
+            android:textColor="@color/bgBlack"
+            android:fontFamily="@font/segoe_ui"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="16dp"/>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="30dp"
+            android:layout_alignParentBottom="true"
+            android:background="@color/SecondaryBlue"
+            android:alpha="0.7"/>
+
+        <TextView
+            android:id="@+id/tv_workoutItemType"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="65dp"
+            android:fontFamily="@font/segoe_ui"
+            android:text="Meal 1"
+            android:textAlignment="center"
+            android:textColor="@color/White"
+            android:textStyle="bold"
+            android:textSize="18sp" />
+
+    </RelativeLayout>
+
+</androidx.cardview.widget.CardView>

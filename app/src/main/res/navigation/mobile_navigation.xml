@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/mobile_navigation"
+    app:startDestination="@+id/navigation_home">
+
+    <fragment
+        android:id="@+id/frag_navigation_Feed"
+        android:name="com.example.fitquest.ui.Feed.FeedFragment"
+        android:label="title_Feed"
+        tools:layout="@layout/fragment_Feed" />
+
+    <fragment
+        android:id="@+id/frag_navigation_Coach"
+        android:name="com.example.fitquest.ui.Coach.CoachFragment"
+        android:label="title_Coach"
+        tools:layout="@layout/fragment_Coach" />
+
+    <fragment
+        android:id="@+id/frag_navigation_Profile"
+        android:name="com.example.fitquest.ui.Profile.ProfileFragment"
+        android:label="title_Profile"
+        tools:layout="@layout/fragment_Profile" />
+</navigation>

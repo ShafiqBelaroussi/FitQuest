@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/rl_content_item"
+    android:layout_width="match_parent"
+    android:layout_height="50dp"
+
+    android:orientation="horizontal"
+    android:background="@color/bgBlack">
+
+
+    <TextView
+        android:id="@+id/tv_day"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:text="Day 1"
+        android:textColor="@color/White"
+        android:fontFamily="@font/segoe_ui"
+        android:textSize="16sp"
+        android:gravity="center_vertical"
+        android:layout_marginStart="8dp"/>
+
+
+</RelativeLayout>

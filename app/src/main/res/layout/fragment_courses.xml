@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:fitsSystemWindows="false"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_marginBottom="60dp"
+    android:background="@color/bgBlack"
+    tools:context=".CoursesFragment">
+
+    <ListView
+        android:id="@+id/lv_coursesList"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:dividerHeight="4dp"
+        android:padding="8dp"
+        android:scrollbars="none"
+        android:visibility="visible"/>
+
+    <ListView
+        android:id="@+id/lv_courseContent"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:dividerHeight="4dp"
+        android:scrollbars="none"
+        android:visibility="gone"/>
+
+    <ListView
+        android:id="@+id/lv_workoutContentListFF"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:dividerHeight="4dp"
+        android:scrollbars="none"
+        android:padding="8dp"
+        android:visibility="gone"
+        tools:listitem="@layout/workout_item"/>
+    <View
+        android:id="@+id/lv_workoutContentList"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/SecondaryBlue"
+        android:visibility="gone"/>
+
+
+
+</FrameLayout>
